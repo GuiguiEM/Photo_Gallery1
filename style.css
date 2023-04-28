@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 125px 1fr 125px;
+    margin: 0px 325px 0px 325px;
+    background-color: rgb(20, 20, 20);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: grid;
+}
+
+h1 {
+    display: grid;
+    place-items: center;
+    place-content: center;
+    color: white;
+    font-size: 1.7em;
+}
+
+p+p {
+    color: yellow;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 4fr 2fr;
+    row-gap: 10px;
+}
+
+.faixa__principal {
+    display: grid;
+    grid-template-areas:
+        "principal secundaria"
+        "principal secundaria";
+    gap: 10px;
+    grid-template-columns: 7fr 6fr;
+}
+
+.img__principal {
+    grid-area: principal;
+    background-image: url(./img/img1.png);
+    background-size: cover;
+    display: grid;
+    place-items: end start;
+    background-position: center;
+
+}
+
+.faixa__informacoes {
+    height: 2.3em;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 8fr 1fr;
+    opacity: 0;
+    transition-duration: .3s;
+}
+
+.faixa__informacoes:hover {
+    opacity: 1;
+}
+
+.informacoes {
+    background-color: rgb(16, 35, 51, 0.8);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.informacoes p {
+    color: white;
+    opacity: 1;
+    font-size: 0.9em;
+    opacity: 1;
+}
+
+.img__secundaria {
+    grid-area: secundaria;
+    display: grid;
+    grid-template-areas:
+        "img2 img3"
+        "img4 img5";
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.img2 {
+    background-image: url(./img/img2.png);
+    background-size: cover;
+    grid-area: img2;
+    background-position: center;
+}
+
+.img3 {
+    background-image: url(./img/img3.png);
+    background-size: cover;
+    grid-area: img3;
+    background-position: center;
+}
+
+.img4 {
+    background-image: url(./img/img4.png);
+    background-size: cover;
+    grid-area: img4;
+    background-position: initial;
+
+}
+
+.img5 {
+    background-image: url(./img/img5.png);
+    background-size: cover;
+    grid-area: img5;
+    background-position: center;
+
+}
+
+.faixa__secundaria {
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: 2fr 2fr 3fr;
+}
+
+.img6 {
+    background-image: url(./img/img6.png);
+    background-size: cover;
+    background-position: initial;
+
+}
+
+.img7 {
+    background-image: url(./img/img7.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.img8 {
+    background-image: url(./img/img8.png);
+    background-size: cover;
+    background-position: top;
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ver_mais {
+    border-radius: 50px;
+    background-color: yellow;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    font-size: 1.3em;
+    display: flex;
+    justify-content: center;
+}
+
+.ver_mais:hover {
+    background-color: yellow;
+    border-style: solid;
+    border-color: black;
+    transform: scale(1.1);
+}
+
+.ver_mais * {
+    text-decoration: none;
+    color: black;
+}
